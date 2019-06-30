@@ -21,7 +21,6 @@ html,body{
 
 }
 
-/* html{padding-left:20px;padding-right: 20px;} */
 p{
     color:#fff;
     font-family: "Roboto"
@@ -139,10 +138,6 @@ li:hover{
     color:#fff;
     outline:none;
 }
-.formCont input:nth-child(1){
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
 .formIconCont{
     display: flex;
     justify-content: center;
@@ -227,6 +222,13 @@ footer p{
     border-bottom: 0;
     border-right: 0;
     border-left: 0;
+}
+.borderTopRad5{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.noBorder{
+    border:none;
 }
 /* Widths */
 .wid100{
