@@ -1,0 +1,253 @@
+
+/* Fonts */
+@font-face {
+    font-family: "Roboto";
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+  }
+@font-face {
+    font-family: "Roboto";
+    src: url('./assets/fonts/Roboto-Medium.ttf');
+    font-weight: bold;
+  }
+html,body{
+    margin:0;
+    background-image: url("./assets/backImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    font-family: "Roboto";
+
+}
+
+/* html{padding-left:20px;padding-right: 20px;} */
+p{
+    color:#fff;
+    font-family: "Roboto"
+}
+h1{
+    color:#fff;
+}
+h2{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#fff;
+}
+/* Container */
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding:0 30px 0 30px;
+    transition: 500ms;
+
+}
+/* Top Header */
+.topHeaderCont{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+.logoImgCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoImgCont img{
+    width: 80px;
+}
+ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 10px;
+    list-style: none;
+
+}
+li{
+    color:#fff;
+    padding:10px;
+    transition: 200ms;
+}
+li:hover{
+    border: 1px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+/* Menu */
+.mobileMenuImg{
+    display:none;
+}
+/* Main Content Section */
+.mainCont{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.mainContSec{
+    max-width: 420px;
+}
+.mainContSec h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.subHeaderCont{
+    max-width: 350px;
+    opacity:0.5;
+}
+.subHeaderCont p{
+    font-size: 16px;
+    font-family: "Roboto";
+}
+/* Form */
+.formCont{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border:1px solid grey;
+    /* overflow:hidden; */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+    width: 320px;
+    height:150px;
+}
+.formCont input{
+    width: 100%;;
+    height: 50px; 
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: transparent;
+    border:1px solid grey;
+    border-right: none;
+    border-left: none;
+    border-bottom: 0;
+    border-width: 0.3px;
+    box-sizing: border-box;
+    /* border-top: none;
+    border-width: 0.3px; */
+    color:#fff;
+    outline:none;
+}
+.formCont input:nth-child(1){
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.formIconCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.formIconImg{
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+}
+.submitBtnCont{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 50px;
+    background-color: #349bea;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.submitBtnImg{
+    width:7px;
+    margin-left: 5px;
+    transition: 100ms;
+
+}
+.submitBtnCont:hover .submitBtnImg{
+    margin-left: 10px;
+}
+.termsCont p{
+    font-size:12px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+/* Footer */
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px
+}
+footer p{
+    font-size: 12px;
+}
+.footerLinksCont{
+    width: 350px;
+}
+/* TOOLS */
+.row{
+    display:flex;
+    flex-direction: row;
+}
+.spaceBetween{
+    justify-content: space-between;
+}
+.alignCenter{
+    align-items: center;
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+/* Colors */
+.grey{
+    color:#9b9b9b
+}
+/* Paddings */
+.pad15{
+    padding:15px;
+}
+/* Borders */
+.borderTop{
+    border: 0.3px solid grey;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+}
+/* Widths */
+.wid100{
+    width: 100%;
+}
+@media only screen and (max-width:800px){
+    html,body{
+        overflow:scroll;
+    }
+    .mainCont{
+        flex-direction: column;
+    }
+    #regMenu{
+        display: none;
+    }
+    .mobileMenuImg{
+        display: block;
+    }
+}
+@media only screen and (max-width:700px){
+    footer{
+        flex-direction: column-reverse;
+    }
+}
